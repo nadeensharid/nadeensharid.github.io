@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nadeen Sharid | Portfolio</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d17;
+    color: #f5f5f5;
+    line-height: 1.7;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 8%;
+    background: #151522;
+    border-bottom: 1px solid #303044;
+}
+nav strong {
+    color: #c4b5fd;
+    font-size: 21px;
+}
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 14px;
+}
+header {
+    padding: 100px 8%;
+    background: linear-gradient(135deg, #10101c, #302050);
+}
+header h1 {
+    font-size: clamp(42px, 7vw, 72px);
+    margin: 10px 0;
+    line-height: 1.2;
+}
+header p {
+    color: #d1cce0;
+    max-width: 650px;
+}
+.accent {
+    color: #b69cff;
+}
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #b69cff;
+    color: #151020;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 10px 10px 0;
+}
+.button:hover {
+    background: #d4c5ff;
+}
+section {
+    padding: 55px 8%;
+    max-width: 1400px;
+    margin: auto;
+}
+h2 {
+    font-size: 30px;
+    color: #c4b5fd;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.skill {
+    background: #222034;
+    border: 1px solid #48405f;
+    padding: 9px 18px;
+    border-radius: 25px;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 24px;
+}
+.card {
+    background: #191927;
+    padding: 28px;
+    border-radius: 15px;
+    border: 1px solid #343047;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #b69cff;
+}
+.card h3 {
+    color: #ffffff;
+    margin-top: 12px;
+}
+.card p {
+    color: #c4c4d0;
+}
+.card a {
+    color: #c4b5fd;
+    text-decoration: none;
+    font-weight: bold;
+}
+.featured {
+    background: linear-gradient(135deg, #251a32, #33213e);
+    border-color: #9774c9;
+}
+.tag {
+    color: #c4b5fd;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #151522;
+    color: #aaa;
+    border-top: 1px solid #303044;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <strong>NS.</strong>
+    <div>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="https://github.com/nadeensharid">GitHub</a>
+    </div>
+</nav>
+
+<header>
+    <span class="accent">HELLO, I'M</span>
+    <h1>Nadeen <span class="accent">Sharid</span></h1>
+    <h3>Computer Science Student | Aspiring Software Engineer</h3>
+    <p>
+        Passionate about software development, technology,
+        and creating innovative digital experiences.
+        Currently exploring object-oriented programming,
+        web development, and creative problem-solving.
+    </p>
+
+    <a class="button" href="#projects">Explore My Projects</a>
+    <a class="button" href="https://github.com/nadeensharid">View GitHub</a>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Computer Science student at the University
+        of Wisconsin-Milwaukee. I enjoy learning new
+        technologies, developing software projects, and
+        applying programming concepts to real-world challenges.
+    </p>
+    <p>
+        I am interested in internship opportunities where
+        I can strengthen my technical skills, collaborate
+        with others, and contribute to meaningful projects.
+    </p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <h3>University of Wisconsin-Milwaukee</h3>
+        <p>Bachelor's Degree in Computer Science</p>
+        <p>Milwaukee, Wisconsin, United States</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+        <span class="skill">Java</span>
+        <span class="skill">HTML5</span>
+        <span class="skill">CSS3</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Object-Oriented Programming</span>
+        <span class="skill">Three.js</span>
+        <span class="skill">GSAP</span>
+        <span class="skill">GitHub</span>
+        <span class="skill">Eclipse IDE</span>
+        <span class="skill">Problem-Solving</span>
+        <span class="skill">Teamwork</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Featured Projects</h2>
+
+    <div class="projects">
+
+        <div class="card featured">
+            <span class="tag">Competition Project</span>
+            <h3>L'Oréal Brandstorm</h3>
+            <p>
+                An interactive 3D web presentation for
+                Lancôme Atelier Sensoriel, a luxury fragrance
+                concept exploring AI-powered personalization
+                and sustainable packaging.
+            </p>
+            <p>HTML, CSS, JavaScript, Three.js, GSAP</p>
+            <a href="https://github.com/nadeensharid/LOreal-Brandstorm-3D-Presentation">
+                View Project &rarr;
+            </a>
+        </div>
+
+        <div class="card">
+            <span class="tag">Java Project</span>
+            <h3>Organization Management System</h3>
+            <p>
+                An academic Java project exploring
+                object-oriented programming through
+                organization and member management.
+            </p>
+            <p>Java | OOP | Classes and Objects</p>
+            <a href="https://github.com/nadeensharid/Java-projects">
+                View Project &rarr;
+            </a>
+        </div>
+
+        <div class="card">
+            <span class="tag">Java Project</span>
+            <h3>Salary Management System</h3>
+            <p>
+                An academic programming project focused
+                on salary management, Java interfaces,
+                and object-oriented programming.
+            </p>
+            <p>Java | Interfaces | OOP</p>
+            <a href="https://github.com/nadeensharid/Salary-Management-System">
+                View Project &rarr;
+            </a>
+        </div>
+
+        <div class="card">
+            <span class="tag">Java Project</span>
+            <h3>Binary Bit System</h3>
+            <p>
+                A Java academic project exploring binary
+                representation, bit strings, abstraction,
+                and programming logic.
+            </p>
+            <p>Java | Binary Representation | Abstraction</p>
+            <a href="https://github.com/nadeensharid/Binary-Bit-System">
+                View Project &rarr;
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Let's Connect</h2>
+    <p>
+        Open to internship opportunities, professional
+        connections, and collaborative technology projects.
+    </p>
+    <a class="button" href="https://github.com/nadeensharid">
+        Connect on GitHub
+    </a>
+</section>
+
+<footer>
+    &copy; 2026 Nadeen Sharid | Computer Science Portfolio
+</footer>
+
+</body>
+</html>
